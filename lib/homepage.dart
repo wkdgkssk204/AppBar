@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           body: Column(children: [
-            const TabBar(
+            TabBar(
               tabs: [
                 Tab(
                   icon: Icon(
@@ -90,7 +90,8 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            TabBarView(children: [
+            Expanded(
+                child: TabBarView(children: [
               Container(
                   child: Center(
                 child: Text('1st Tab'),
@@ -103,7 +104,7 @@ class HomePage extends StatelessWidget {
                   child: Center(
                 child: Text('1st Tab'),
               )),
-            ]),
+            ])),
           ])),
     );
   }
