@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
+// import 'package:webview_flutter/webview_flutter.dart';
+// import 'package:webview_flutter_android/webview_flutter_android.dart';
+// import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -93,16 +102,142 @@ class HomePage extends StatelessWidget {
             Expanded(
                 child: TabBarView(children: [
               Container(
-                  child: Center(
-                child: Text('1st Tab'),
+                  child: const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 30.0, 0.0, 0.0),
+                    child: Text(
+                      'NAME',
+                      style: TextStyle(
+                        color: Colors.deepPurple,
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 0.0),
+                    child: Text(
+                      'Jang Hanna',
+                      style: TextStyle(
+                          letterSpacing: 2.0,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 30.0, 0.0, 0.0),
+                    child: Text(
+                      'NAME',
+                      style: TextStyle(
+                        color: Colors.deepPurple,
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 0.0),
+                    child: Text(
+                      'Jang Hanna',
+                      style: TextStyle(
+                          letterSpacing: 2.0,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 30.0, 0.0, 0.0),
+                    child: Text(
+                      'NAME',
+                      style: TextStyle(
+                        color: Colors.deepPurple,
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 0.0),
+                    child: Text(
+                      'Jang Hanna',
+                      style: TextStyle(
+                          letterSpacing: 2.0,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 30.0, 0.0, 0.0),
+                    child: Text(
+                      'NAME',
+                      style: TextStyle(
+                        color: Colors.deepPurple,
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 0.0),
+                    child: Text(
+                      'Jang Hanna',
+                      style: TextStyle(
+                          letterSpacing: 2.0,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 30.0, 0.0, 0.0),
+                    child: Text(
+                      'NAME',
+                      style: TextStyle(
+                        color: Colors.deepPurple,
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 0.0),
+                    child: Text(
+                      'Jang Hanna',
+                      style: TextStyle(
+                          letterSpacing: 2.0,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 30.0, 0.0, 0.0),
+                    child: Text(
+                      'NAME',
+                      style: TextStyle(
+                        color: Colors.deepPurple,
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 0.0),
+                    child: Text(
+                      'Jang Hanna',
+                      style: TextStyle(
+                          letterSpacing: 2.0,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ],
               )),
               Container(
                   child: Center(
-                child: Text('1st Tab'),
+                child: Text('2nd Tab'),
               )),
               Container(
                   child: Center(
-                child: Text('1st Tab'),
+                child: Text('3rd Tab'),
+              )),
+              Container(
+                  child: Center(
+                child: Text('4th Tab'),
               )),
             ])),
           ])),
